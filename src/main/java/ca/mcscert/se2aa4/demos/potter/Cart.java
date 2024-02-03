@@ -46,4 +46,11 @@ public class Cart {
         copy.putAll(contents);
         return new Cart(copy);
     }
+
+    @Override
+    public String toString() {
+        return "Cart{" +
+                "contents=" + contents +
+                '}';
+    }
 }

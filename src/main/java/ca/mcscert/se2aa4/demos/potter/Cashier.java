@@ -9,8 +9,10 @@ public class Cashier {
     public static final double PRICE = 8.0;
 
     private List<Discount> discounts =
-            Arrays.asList(new Discount(5, 0.75), new Discount(4, 0.80),
-                          new Discount(3, 0.90), new Discount(2, 0.95) );
+            Arrays.asList(new Discount(5, 0.75), 
+                          new Discount(4, 0.80),
+                          new Discount(3, 0.90), 
+                          new Discount(2, 0.95));
 
     public double price(Cart b) {
         if(b == null) { return 0.0; }
